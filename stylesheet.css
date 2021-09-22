@@ -24,13 +24,11 @@ html {
 
 body {
     background-color: rgba(36,41,47) !important;
-    height: 100%;
-    width: 100%;
 }
 
-#container-view {
-    display: flex;
-    flex-direction: column;
+main {
+    overflow-x:hidden;
+    overflow-y: hidden
 }
 
 #home-main-view {
@@ -75,11 +73,8 @@ body {
     }
 
     .title-container {
-        width: 30em;
-        display: flex;
+        margin-left: 20%;
         margin-top: 5em;
-        justify-content: center;
-        align-items: center;
     }
 
     .domain-container {
@@ -626,12 +621,8 @@ body {
     }
 
     .title-container {
-        width: 30em;
-        display: flex;
-        margin-left: 15em;
+        margin-left: 20%;
         margin-top: 5em;
-        justify-content: center;
-        align-items: center;
     }
 
     .domain-container {
@@ -697,7 +688,6 @@ body {
 .title-container .box {
     width: 350px;
     height: 250px;
-    position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -712,31 +702,25 @@ body {
 }
   
 .title .block {
-    width: 0%;
     height: inherit;
     background: #326A64;
     position: absolute;
     animation: mainBlock 2s cubic-bezier(.74, .06, .4, .92) forwards;
-    display: flex;
 }
   
 .title h1 {
     font-family: 'Poppins';
     color: #fff;
-    font-size: 40px;
     -webkit-animation: mainFadeIn 2s forwards;
     -o-animation: mainFadeIn 2s forwards;
     animation: mainFadeIn 2s forwards;
     animation-delay: 1.6s;
     opacity: 0;
-    display: flex;
     align-items: baseline;
     position: relative;
 }
   
 .title h1 span {
-    width:0px;
-    height: 0px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -1086,6 +1070,14 @@ input, textarea, select {
 }
 
 @media only screen and (max-width: 600px) {
+    .title-container .box {
+        width: 200px;
+        display: flex;
+        gap: 15vw;
+        flex-direction: column;
+        margin-bottom: 15vh;
+    }
+
     .skills {
         display: flex;
         flex-direction: column;
@@ -1115,6 +1107,14 @@ input, textarea, select {
         flex-direction: column;
     }
 
+    #filmbox-image {
+        width: 20em;
+        height: 20em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/filmbox.png");
+    }
+
     #filmbox-description {
         font-weight: 500;
         font-family: 'Lato';
@@ -1123,11 +1123,24 @@ input, textarea, select {
 }
 
 @media only screen and (min-width: 600px) {
+    #first-project {
+        display: flex;
+        gap: 10%;
+    }
+
     #filmbox-description {
         font-weight: 500;
         font-family: 'Lato';
         text-align: justify;
         width: 50%;
+    }
+
+    #filmbox-image {
+        width: 30em;
+        height: 35em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/filmbox.png");
     }
 }
 
@@ -1155,41 +1168,6 @@ input, textarea, select {
     font-family: 'Lato';
     font-weight: 700;
     margin-bottom: 10%;
-}
-
-#first-project {
-    display: flex;
-    gap: 10%;
-}
-
-#filmbox-image {
-    width: 30em;
-    height: 35em;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-image: url("img/filmbox.png");
-}
-
-.project-tools-logo {
-    display: flex;
-    flex-direction: row;
-}
-
-#logo-android {
-    width: 3em;
-    height: 3em;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-image: url("img/Logo-android.png");
-    margin-left: auto;
-}
-
-#logo-kotlin {
-    width: 3em;
-    height: 3em;
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-image: url("img/Logo-kotlin.png");
 }
 
 #app-name {
