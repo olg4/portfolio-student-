@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr">
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="skillsGraphics.js"></script>
+        <title>olg4</title>
+    </head>
+
+    <body>
+		<header>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+				<a class="navbar-brand" href="#"></a>
+			  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			  	</button>
+			  	<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+			    	<div class="navbar-nav container-nav-section">
+                        <a class="nav-item nav-link projects" id="project" href="#projects-view">Projects</a>
+			      		<a class="nav-item nav-link contact" id="contact" href="#">Contact me</a>
+			    	</div>
+			  	</div>
+			</nav>
+        </header>
+
+        <main>
+            <div id="contact-selected">
+                <div class="backgroung-opacity-contact-container">
+                </div>
+                <div class="contact-container">
+                    <div class="mini-balls">
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                        <div class="ball"></div>
+                    </div>
+                    <div id="contact-subcontainer">
+                        <div id="contact-icon"><em class="fa fa-envelope"></em></div>
+                        <form id="contact-form" action="" method="post">          
+                            <input class="contact-form-control" name="name" placeholder="Name" type="text" required autofocus>
+                            <input class="contact-form-control" name="email" placeholder="Email" type="text" required autofocus>
+                            <input class="contact-form-control" name="company" placeholder="Your company (optional)" type="url" tabindex="4" required>
+                            <textarea class="contact-form-control" name="message" placeholder="MESSAGE"></textarea>
+                            <div id="contact-action">
+                                <div id="contact-cancel">Cancel</div>
+                                <div name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-icons-container">
+                <a href="#" class="card-link icon" target="_blank" style="visibility: hidden;"></a>
+                <a href="https://github.com/olg4" class="card-link icon-left-side" target="_blank"><em class="fa fa-github"></em></a>
+                <a href="#" id="contact-link" class="card-link icon-left-side" target="_blank"><em class="fa fa-envelope"></em></a>
+                <a href="https://instagram.com/" class="card-link icon-left-side" target="_blank"><em class="fa fa-instagram"></em></a>
+            </div>
+
+            <div id="container-view">
+                <section id="home-main-view">
+                    <div id="semi-grid-background">
+                        <!--row 1-->
+                        <div class="row1" id="cell1"></div>
+                        <div class="row1" id="cell2"></div>
+                        <div class="row1" id="cell3"></div>
+                        <div class="row1" id="cell4"></div>
+                        <div class="row1" id="cell5"></div>
+                        <div class="row1" id="cell6"></div>
+                        <div class="row1" id="cell7"></div>
+                        <div class="row1" id="cell8"></div>
+                        <div class="row1" id="cell9"></div>
+                        <div class="row1" id="cell10"></div>
+            
+                        <!--row 2-->
+                        <div class="row2" id="cell11"></div>
+                        <div class="row2" id="cell12"></div>
+                        <div class="row2" id="cell13"></div>
+                        <div class="row2" id="cell14"></div>
+                        <div class="row2" id="cell15">
+                            <div id="cell15-1"></div>
+                            <div id="cell15-2"></div>
+                            <div id="cell15-3"></div>
+                        </div>
+                        <div class="row2" id="cell16">
+                            <div id="cell16-1"></div>
+                            <div id="cell16-2"></div>
+                            <div id="cell16-3"></div>
+                            <div id="cell16-4"></div>
+                        </div>
+                        <div id="cell17"></div>
+                        
+                        <!--row 3-->
+                        <div class="row3" id="cell18"></div>
+                        <div class="row3" id="cell19"></div>
+                        <div class="row3" id="cell20"></div>
+                        <div class="row3" id="cell21"></div>
+                        <div class="row3" id="cell22"></div>
+                        <div class="row3" id="cell23"></div>
+                        <div class="row3" id="cell24"></div>
+                        <div class="row3" id="cell25"></div>
+                        <div class="row3" id="cell26"></div>
+                    </div>
+                    <div class="title-container">
+                        <div class="box">
+                            <div class="title">
+                                <span class="block"></span>
+                                <h1>Olga Baitemirova<span></span></h1>
+                            </div>
+                            <div class="role">
+                                <div class="block"></div>
+                                <p>Computer Science Student</p>
+                            </div>
+                            <button id="about-me">
+                                <span>About Me</span>
+                                <em class="fa fa-chevron-right"></em>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="domain-container">
+                        <div class="domain">Web</div>
+                        <div class="domain">Software</div>
+                        <div class="domain">Mobile</div>
+                    </div>
+                </section>
+
+                <section id="about-me-view">
+                    <div id="about-me-text-container">
+                        <h2 id="introducing">I am a belgium computer science student, still in the process but ready to jump in.</h2>
+                        <br/>
+                        <h4 id="introducing-next">
+                            In the past I had to work alone on some projects for school and for myself, but I also had the opportunity to work multiple times with a team outside and at school.
+                            <br/>Curiosity, enthusiasm, appetite push me to be a jack of all trades.
+                            <br/>I want to use these tools to build and create and I believe that today, computer skills and motivation are one of the combinations that can bring something new, exciting, efficient and useful in a lot of domains.
+                        </h4>
+                    </div>
+                </section>
+                <section id="graphic-skills-view">
+                    <div id="graphics">
+                        <div class="skills" id="web">
+                            <div class="graphic" id="web-graphic">
+                                <div class="title-graphic"><h3>Web</h3></div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info web-progress-bar" role="progressbar" style="width: 0%" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>CSS</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success web-progress-bar" role="progressbar" style="width: 0%" data-width="85" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>HTML</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning web-progress-bar" role="progressbar" style="width: 0%" data-width="50" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>JAVASCRIPT</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger web-progress-bar" role="progressbar" style="width: 0%" data-width="40" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>PHP</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning web-progress-bar" role="progressbar" style="width: 0%" data-width="50" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>JQUERY</span></div>
+                                </div>
+                            </div>
+
+                            <div class="addition" id="web-addition">
+                                <div class="title-tools"><h3>API & Tools already used for web development &nbsp <em class="fa fa-cogs"></em></h3></div>
+                                <p class="list-tools"><h6>Bootstrap, Laravel, REST, Django, Odoo</h6></p>
+                                <p class="list-editor"><h6>Editor: Sublime Text, Visual Studio Code</h6></p>
+                            </div>
+                        </div>
+
+                        <div class="skills" id="mobile">
+                            <div class="addition" id="mobile-addition">
+                                <div class="title-tools"><h3>API & Tools already used for mobile development &nbsp <em class="fa fa-cogs"></em></h3></div>
+                                <p class="list-tools"></p>
+                                <p class="list-editor"><h6>Editor: Android Studio</h6></p>
+                            </div>
+
+                            <div class="graphic" id="mobile-graphic">
+                                <div class="title-graphic"><h3>Mobile</h3></div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info mobile-progress-bar" role="progressbar" style="width: 0%" data-width="70" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>Kotlin</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success mobile-progress-bar" role="progressbar" style="width: 0%" data-width="80" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>XML</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills" id="other">
+                            <div class="graphic" id="other-graphic">
+                                <div class="title-graphic"><h3>Other</h3></div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success other-progress-bar" role="progressbar" style="width: 0%" data-width="80" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>Java</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar other-progress-bar" role="progressbar" style="width: 0%; background-color: #E6992B !important;" data-width="40" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"><span>Assembly</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info other-progress-bar" role="progressbar" style="width: 0%" data-width="70" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>Python</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info other-progress-bar" role="progressbar" style="width: 0%" data-width="75" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>C++</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning other-progress-bar" role="progressbar" style="width: 0%" data-width="65" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span>C</span></div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger other-progress-bar" role="progressbar" style="width: 0%" data-width="20" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"><span>C#</span></div>
+                                </div>
+                            </div>
+
+                            <div class="addition" id="other-addition">
+                                <div class="title-tools"><h3>API & Tools already used &nbsp <em class="fa fa-cogs"></em></h3></div>
+                                <p class="list-tools"></p>
+                                <p class="list-editor"><h6>Editor: Netbeans, QT Creator, IDLE Python, Unity 3D, IntelliJ, Arduino IDE, ...</h6></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects-view">
+                    <h1 id="project-title">Projects</h1>
+                    <div id="first-project">
+                        <div id="filmbox-image"></div>
+                        <div id="filmbox-description">
+                            <div ><h2 id="app-name">FilmBox</h2></div>
+                            <h4>FilmBox is an application for Android.<br/>
+                            You can search movies, explore the catalog, have access to details like synopsis and rating and pick movies randomly. 
+                            If you need customs lists you can create as many lists as you want and add movies to them. 
+                            Plus it's possible to create multiple accounts on one device.</h4>
+                            <br/>
+                            <div class="project-tools-logo">
+                                <div id="logo-android"></div>
+                                <div id="logo-kotlin"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="esi-view">
+                    <div id="training">
+                        <div><h1 id="training-title">Training</h1></div>
+                        <div id="he2b-esi">
+                            <a href="https://www.he2b.be/campus-esi" target="blank_"><div id="esi-logo"></div></a>
+                            <div id="esi-description">
+                                <h4>The "management IT" section covers all areas of IT.</h4>
+                                <br/>
+                                <h4>It opens the doors to the development of systems in the world of client-server 
+                                architectures, databases, graphical interfaces, intranet and internet networks.
+                                This section develops more particularly professional skills oriented toward the 
+                                mastery of specific applications in management, business organization and project 
+                                management.</h4>
+                                <br/>
+                                <h6><a href="https://www.he2b.be/formations/esi/informatique-gestion" target="blank_">see more</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+
+        </footer>
+          
+    </body>
+</html>
