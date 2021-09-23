@@ -41,14 +41,14 @@
                     </div>
                     <div id="contact-subcontainer">
                         <div id="contact-icon"><em class="fa fa-envelope"></em></div>
-                        <form id="contact-form" action="contact.php" method="post">          
-                            <input class="contact-form-control" name="name" placeholder="Name" type="text" required autofocus>
-                            <input class="contact-form-control" name="email" placeholder="Email" type="text" required autofocus>
-                            <input class="contact-form-control" name="company" placeholder="Your company (optional)" type="url" tabindex="4" required>
-                            <textarea class="contact-form-control" name="message" placeholder="MESSAGE"></textarea>
+                        <form id="contact-form" action="https://formspree.io/f/mayavknj" method="POST">          
+                            <input class="contact-form-control" name="name" type="text" placeholder="Name" required>
+                            <input class="contact-form-control" name="_replyto" type="email" placeholder="Email" required>
+                            <input class="contact-form-control" name="company" placeholder="Your company (optional)" >
+                            <textarea class="contact-form-control" name="message" placeholder="MESSAGE" required></textarea>
                             <div id="contact-action">
                                 <div id="contact-cancel">Cancel</div>
-                                <div name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send</div>
+                                <button type="submit" id="contact-submit" value="Send">Send</button>
                             </div>
                         </form>
                     </div>
@@ -58,7 +58,7 @@
                 <a href="#" class="card-link icon" target="_blank" style="visibility: hidden;"></a>
                 <a href="https://github.com/olg4" class="card-link icon-left-side" target="_blank"><em class="fa fa-github"></em></a>
                 <a href="#" id="contact-link" class="card-link icon-left-side" target="_blank"><em class="fa fa-envelope"></em></a>
-                <a href="https://instagram.com/" class="card-link icon-left-side" target="_blank"><em class="fa fa-instagram"></em></a>
+                <a href="https://instagram.com/olg4mirova" class="card-link icon-left-side" target="_blank"><em class="fa fa-instagram"></em></a>
             </div>
 
             <article>
@@ -115,22 +115,24 @@
                                 <div class="block"></div>
                                 <p>Computer Science Student</p>
                             </div>
-                            <button id="about-me">
-                                <span>About Me</span>
-                                <em class="fa fa-chevron-right"></em>
-                            </button>
+                            <a href="#about-me-view">
+                                <button id="about-me">
+                                    <span>About Me</span>
+                                    <em class="fa fa-chevron-right"></em>
+                                </button>
+                            </a>
                         </div>
                     </div>
-                    <div class="domain-container">
-                        <div class="domain">Web</div>
-                        <div class="domain">Software</div>
-                        <div class="domain">Mobile</div>
+                    <div class="domain-container" style="cursor: default;">
+                        <div class="domain"><h4>Web</h4></div>
+                        <div class="domain"><h4>Software</h4></div>
+                        <div class="domain"><h4>Mobile</h4></div>
                     </div>
                 </section>
 
                 <section id="about-me-view">
                     <div id="about-me-text-container">
-                        <h2 id="introducing">I am a belgium computer science student, still in the process but ready to jump in.</h2>
+                        <h2 id="introducing">I am a belgian computer science student, still in the process but ready to jump in.</h2>
                         <br/>
                         <h4 id="introducing-next">
                             In the past I had to work alone on some projects for school and for myself, but I also had the opportunity to work multiple times with a team outside and at school.
@@ -228,13 +230,15 @@
                             You can search movies, explore the catalog, have access to details like synopsis and rating and pick movies randomly. 
                             If you need customs lists you can create as many lists as you want and add movies to them. 
                             Plus it's possible to create multiple accounts on one device.</h4>
+                            <br/>
+                            <a href="https://github.com/olg4/FilmBox" style="text-decoration: none; color: #326A64" target="blank_">github</a>
                         </div>
                     </div>
                 </section>
 
                 <section id="esi-view">
-                    <div id="training">
-                        <div><h1 id="training-title">Training</h1></div>
+                    <div id="education">
+                        <div><h1 id="education-title">Education</h1></div>
                         <div id="he2b-esi">
                             <a href="https://www.he2b.be/campus-esi" target="blank_"><div id="esi-logo"></div></a>
                             <div id="esi-description">

@@ -24,6 +24,7 @@ html {
 
 body {
     background-color: rgba(36,41,47) !important;
+    position: relative;
 }
 
 main {
@@ -87,7 +88,6 @@ main {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
-        font-size: 18px;
         font-family: "Source Sans Pro", sans-serif;
         animation: reveal 10000ms ease-in-out forwards 200ms,
                    glow 2500ms linear 2000ms;
@@ -1013,6 +1013,16 @@ input, textarea, select {
     cursor: pointer;
 }
 
+#contact-submit {
+    color: #276368;
+    height: auto;
+    font-weight: 600;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+}
+
 #graphic-skills-view {
     background-color: #253240;
     padding-left: 10%;
@@ -1070,6 +1080,15 @@ input, textarea, select {
 }
 
 @media only screen and (max-width: 600px) {
+
+    #about-me-text-container {
+        margin-right: 1em;
+        text-align: center;
+        border-left: 3px solid grey;
+        padding-left: 2em;
+        font-family: 'Lato';
+    }
+
     .title-container .box {
         width: 200px;
         display: flex;
@@ -1102,6 +1121,14 @@ input, textarea, select {
         flex-direction: column;
     }
 
+    #esi-description {
+        text-align: center;
+        color: white;
+        border-left: 3px solid grey;
+        padding-left: 3%;
+        font-family: 'Lato';
+    }
+
     #first-project {
         display: flex;
         flex-direction: column;
@@ -1118,7 +1145,7 @@ input, textarea, select {
     #filmbox-description {
         font-weight: 500;
         font-family: 'Lato';
-        text-align: justify;
+        text-align: center;
     }
 }
 
@@ -1141,6 +1168,14 @@ input, textarea, select {
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-image: url("img/filmbox.png");
+    }
+
+    #esi-description {
+        text-align: justify;
+        color: white;
+        border-left: 3px solid grey;
+        padding-left: 3%;
+        font-family: 'Lato';
     }
 }
 
@@ -1182,11 +1217,13 @@ input, textarea, select {
     height: 100vh;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 5%;
 }
 
-#training-title {
+#education-title {
     color: white;
     font-weight: 700;
+    font-family: 'Lato';
 }
 
 #he2b-esi {
@@ -1202,12 +1239,4 @@ input, textarea, select {
     background-repeat: no-repeat;
     background-image: url("img/Logo-esi.png");
     border: 2px solid #283F57;
-}
-
-#esi-description {
-    text-align: justify;
-    color: white;
-    border-left: 3px solid grey;
-    padding-left: 3%;
-    font-family: 'Lato';
 }
