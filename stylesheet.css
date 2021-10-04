@@ -588,7 +588,7 @@ main {
         flex-direction: column;
         justify-content: space-between;
         flex-wrap: wrap;
-        height: 13em;
+        height: 7em;
         width: 5em;
         left: -5em;
         margin-top: auto;
@@ -1079,6 +1079,7 @@ input, textarea, select {
     padding-bottom: 5%;
 }
 
+/* mobile */
 @media only screen and (max-width: 600px) {
 
     #about-me-text-container {
@@ -1116,19 +1117,6 @@ input, textarea, select {
         order:2;
     }
 
-    #he2b-esi {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #esi-description {
-        text-align: center;
-        color: white;
-        border-left: 3px solid grey;
-        padding-left: 3%;
-        font-family: 'Lato';
-    }
-
     #first-project {
         display: flex;
         flex-direction: column;
@@ -1146,6 +1134,19 @@ input, textarea, select {
         font-weight: 500;
         font-family: 'Lato';
         text-align: center;
+    }
+
+    #he2b-esi {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #esi-description {
+        text-align: center;
+        color: white;
+        border-left: 3px solid grey;
+        padding-left: 3%;
+        font-family: 'Lato';
     }
 }
 
@@ -1213,11 +1214,10 @@ input, textarea, select {
 
 #esi-view {
     background-color: #253240;
-    padding-top: 2%;
-    height: 100vh;
+    padding-top: 10%;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
 }
 
 #education-title {
