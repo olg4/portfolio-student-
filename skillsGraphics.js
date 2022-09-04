@@ -1,11 +1,13 @@
 $(function() {
     $('#contact-link').click(function() {
         $('#contact-selected').show();
+        $('html,body').scrollTop(0);
         return false;
     }); 
     
     $('#contact').click(function() {
         $('#contact-selected').show();
+        $('html,body').scrollTop(0);
         return false;
     }); 
     
@@ -16,19 +18,19 @@ $(function() {
     });
 });
 
-var inViewportOther = false;
-var inViewportMobile = false;
-var inViewportWeb = false;
+let inViewportOther = false;
+let inViewportMobile = false;
+let inViewportWeb = false;
 
 window.addEventListener('scroll', function() {
-    var elementOther = document.querySelector('#other');
-    var positionOther = elementOther.getBoundingClientRect();
+    let elementOther = document.querySelector('#other');
+    let positionOther = elementOther.getBoundingClientRect();
 
-    var elementMobile = document.querySelector('#mobile');
-    var positionMobile = elementMobile.getBoundingClientRect();
+    let elementMobile = document.querySelector('#mobile');
+    let positionMobile = elementMobile.getBoundingClientRect();
 
-    var elementWeb = document.querySelector('#web');
-    var positionWeb = elementWeb.getBoundingClientRect();
+    let elementWeb = document.querySelector('#web');
+    let positionWeb = elementWeb.getBoundingClientRect();
 
     // checking for partial visibility
     if(positionOther.top < window.innerHeight && positionOther.bottom >= 0) {
@@ -57,17 +59,17 @@ window.addEventListener('scroll', function() {
 });
 
 function animatedProgressBar(whichGraphic, isVisible) {
-    var elements = document.getElementsByClassName(whichGraphic);
-    for (var i = 0; i < elements.length; i++) {
-        var status = elements[i].getAttribute('data-width');
-        if (isVisible) fill(status, elements[i]);
-        else clear(elements[i]);
+    let elements = document.getElementsByClassName(whichGraphic);
+    for (const element of elements) {
+        let status = element.getAttribute('data-width');
+        if (isVisible) fill(status, element);
+        else clear(element);
     }
 }
 
 function fill(status, progressBar) {
-    var width = 1;
-    var id = setInterval(frame, 1);
+    let width = 1;
+    let id = setInterval(frame, 1);
     function frame() {
         if (width >= status) {
             clearInterval(id);

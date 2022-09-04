@@ -1121,6 +1121,11 @@ input, textarea, select {
         flex-direction: column;
     }
 
+    #LaReunion-intern {
+        display: flex;
+        flex-direction: column;
+    }
+
     #filmbox-image {
         width: 20em;
         height: 20em;
@@ -1130,6 +1135,20 @@ input, textarea, select {
     }
 
     #filmbox-description {
+        font-weight: 500;
+        font-family: 'Lato';
+        text-align: center;
+    }
+
+    #LaReunion-image {
+        width: 20em;
+        height: 20em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/Conseil-Départemental-de-LaRéunion.png");
+    }
+
+    #LaReunion-description {
         font-weight: 500;
         font-family: 'Lato';
         text-align: center;
@@ -1155,6 +1174,11 @@ input, textarea, select {
         gap: 10%;
     }
 
+    #LaReunion-intern {
+        display: flex;
+        gap: 10%;
+    }
+
     #filmbox-description {
         font-weight: 500;
         font-family: 'Lato';
@@ -1168,6 +1192,22 @@ input, textarea, select {
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-image: url("img/filmbox.png");
+    }
+
+    #LaReunion-description {
+        font-weight: 500;
+        font-family: 'Lato';
+        text-align: justify;
+        width: 50%;
+        margin-right: 3em;
+    }
+
+    #LaReunion-image {
+        width: 25em;
+        height: 30em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/Conseil-Départemental-de-LaRéunion.png");
     }
 
     #esi-description {
@@ -1191,6 +1231,10 @@ input, textarea, select {
     font-size: 1vw;
 }
 
+.working-environment {
+    font-size: 1vw;
+}
+
 #projects-view {
     background-color: white;
     padding-left: 10%;
@@ -1203,12 +1247,50 @@ input, textarea, select {
     font-family: 'Lato';
     font-weight: 700;
     margin-bottom: 10%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #316861;
+    text-decoration-thickness: 2px;
 }
 
 #app-name {
     margin-bottom: 10%;
     font-weight: 600;
     font-family: 'Lato';
+}
+
+#experience-internship-title {
+    font-family: 'Lato';
+    font-weight: 700;
+    margin-bottom: 10%;
+    text-align: right;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #316861;
+    text-decoration-thickness: 2px;
+}
+
+#intern-place {
+    margin-bottom: 10%;
+    font-weight: 600;
+    font-family: 'Lato';
+}
+
+#experience-view {
+    background-color: #FFFBFA;
+    padding-left: 15%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+#limesurvey-link {
+    color: #61b22f;
+    text-decoration: none;
+}
+
+#limesurvey-link:visited {
+    text-decoration: none;
 }
 
 #esi-view {
