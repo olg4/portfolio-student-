@@ -1154,6 +1154,15 @@ input, textarea, select {
         text-align: center;
     }
 
+    #limesurveyduo-image {
+        width: 30em;
+        height: 15em;
+        margin-left: -3em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/limesurveyduo.png");
+    }
+
     #he2b-esi {
         display: flex;
         flex-direction: column;
@@ -1204,10 +1213,19 @@ input, textarea, select {
 
     #LaReunion-image {
         width: 25em;
-        height: 30em;
+        height: 18em;
+        margin-top: 5em;
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-image: url("img/Conseil-Départemental-de-LaRéunion.png");
+    }
+
+    #limesurveyduo-image {
+        width: 35em;
+        height: 20em;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-image: url("img/limesurveyduo.png");
     }
 
     #esi-description {

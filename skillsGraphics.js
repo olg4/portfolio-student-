@@ -32,6 +32,9 @@ window.addEventListener('scroll', function() {
     let elementWeb = document.querySelector('#web');
     let positionWeb = elementWeb.getBoundingClientRect();
 
+    let elementInternship = document.querySelector('#experience-view');
+    let positionInternship = elementInternship.getBoundingClientRect();
+
     // checking for partial visibility
     if(positionOther.top < window.innerHeight && positionOther.bottom >= 0) {
         if (!inViewportOther) animatedProgressBar("other-progress-bar", true);
@@ -56,7 +59,19 @@ window.addEventListener('scroll', function() {
         inViewportWeb = false;
         animatedProgressBar("web-progress-bar", false);
     }
+
+    if(positionInternship.top < window.innerHeight && positionInternship.bottom >= 0) {
+        if (!inViewportWeb) slideLimeSurveyImage(true)
+        inViewportWeb = true;
+    } else {
+        inViewportWeb = false;
+        slideLimeSurveyImage(false)
+    }
 });
+
+function slideLimeSurveyImage(isVisible) {
+
+}
 
 function animatedProgressBar(whichGraphic, isVisible) {
     let elements = document.getElementsByClassName(whichGraphic);
